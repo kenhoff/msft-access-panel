@@ -1,0 +1,24 @@
+{
+  "name": "access-panel",
+  "version": "0.0.1",
+  "description": "The Access Panel redesign for the 2015 Microsoft //oneweek Hackathon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenhoff/access-panel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenhoff/access-panel/issues"
+  },
+  "homepage": "https://github.com/kenhoff/access-panel#readme",
+  "dependencies": {
+    "express": "^4.13.1",
+    "harp": "^0.17.0",
+    "jade": "^1.11.0"
+  }
+}

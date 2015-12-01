@@ -1,0 +1,113 @@
+body
+	font-family: 'Open Sans', sans-serif;
+	font-weight 300
+
+#gridHeader
+	height 69px
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content flex-start
+	h1
+		font-weight 300
+		margin-top auto
+		margin-bottom auto
+		margin-left 10px
+		margin-right 30px
+	.icon
+		color rgb(128, 128, 128)
+		margin 10px
+		// width 14px
+		margin-top auto
+		margin-bottom 20px
+		img
+			height 14px
+
+
+
+#grid
+	display flex
+	flex-direction row
+	flex-wrap wrap
+
+.gridItem
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	width 300px
+	height 80px
+	background-color white
+	margin 5px
+	color inherit
+	icon
+		width 80px
+		min-width 80px
+		height 80px
+		display flex
+	img
+		width 80px
+		height 80px
+		min-width 80px
+	h2
+		margin auto
+		color white
+		text-align center
+		font-weight 300
+		font-size 30px
+	h3
+		padding-bottom 5px
+		margin-left 25px
+		margin-top auto
+		margin-bottom auto
+		overflow hidden
+		font-weight 300
+		text-overflow ellipsis
+		white-space nowrap
+	&:hover
+		background-color #E6F1FF
+		text-decoration none
+		color inherit
+		i
+			visibility visible
+	i
+		margin-right 10px
+		margin-left auto
+		visibility hidden
+// if the screen is wider than 1200px, widen .gridItem
+@media (min-width: 1200px)
+	.gridItem
+		width 350px
+
+.portal-button
+	border-bottom-color: rgb(238, 238, 238);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding 10px
+	margin 0px
+	height 80px
+	display flex
+	flex-direction row
+	color inherit
+	&:hover
+		text-decoration none
+		color inherit
+	h3
+		margin-top auto
+		margin-bottom auto
+		font-weight 300
+	img
+		height 50px
+		width 50px
+		min-width 50px
+		margin auto
+		margin-right 20px
+		margin-left 10px
+	p
+		margin-top auto
+		margin-bottom auto
+	.text
+		margin-top auto
+		margin-bottom auto
+
+#graphs
+	margin-top 50px

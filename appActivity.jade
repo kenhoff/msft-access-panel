@@ -1,0 +1,28 @@
+extends layout.jade
+
+block title
+	title Activity - Contoso
+
+
+
+block content
+	.col-md-8
+		h1 map + table
+		.row
+			h2 map
+		.row
+			h2 table
+			link(href = '/secTable.css' rel='stylesheet')
+			#container
+				table#report(col='4')
+					tr
+						td.row1.row-Threat
+						td.row2.row-Location
+						td.row3.row-Time
+						td.row4.IP
+					tr
+			
+	.col-md-4
+		h1 pie chart + bar graph
+
+	script(src = "/secTable.js")

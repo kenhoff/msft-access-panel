@@ -1,0 +1,26 @@
+extends layout.jade
+
+block title
+	title Groups - Contoso
+	
+block scripts
+	script(src = "/generateColorAndInitials.js")
+
+block content
+	.col-md-8
+		#gridHeader.row
+			h1 Groups
+			img(src = "/img/icons/search.svg")
+		.row
+			#grid
+	.col-md-4
+		.row(style = "height: 69px")
+		.row
+			.buttons
+				.portal-button
+					img(src = "/img/icons/join-group.svg")
+					h3 Join group
+				.portal-button
+					img(src = "/img/icons/create-group.svg")
+					h3 Create group
+		

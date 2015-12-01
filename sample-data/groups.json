@@ -1,0 +1,73 @@
+groups = [{
+	"displayName": "Contoso Dev",
+	"id": "contosodev",
+	"isOwner": true
+}, {
+	"displayName": "Contoso Prototypes",
+	"id": "contosoprototypes",
+	"isOwner": true
+}, {
+	"displayName": "Contoso Apps",
+	"id": "contosoapps",
+	"isOwner": false
+}, {
+	"displayName": "Dev Team",
+	"id": "devteam",
+	"isOwner": false
+}, {
+	"displayName": "Research Dev",
+	"id": "researchdev",
+	"isOwner": false
+}, {
+	"displayName": "Search Analytics",
+	"id": "searchanalytics",
+	"isOwner": false
+}, {
+	"displayName": "Sales Team",
+	"id": "salesteam",
+	"isOwner": false
+}, {
+	"displayName": "Resource Group",
+	"id": "resourcegroup",
+	"isOwner": false
+}, {
+	"displayName": "Analytics",
+	"id": "analytics",
+	"isOwner": false
+}, {
+	"displayName": "Contoso Apps",
+	"id": "contosoapps",
+	"isOwner": false
+}, {
+	"displayName": "Design UX",
+	"id": "designux",
+	"isOwner": false
+}, {
+	"displayName": "Productivity",
+	"id": "productivity",
+	"isOwner": false
+}, {
+	"displayName": "Sales Group",
+	"id": "salesgroup",
+	"isOwner": false
+}, {
+	"displayName": "Business Group",
+	"id": "businessgroup",
+	"isOwner": false
+}, {
+	"displayName": "Contoso Designers",
+	"id": "contosodesigners",
+	"isOwner": false
+}, {
+	"displayName": "Information Resources",
+	"id": "informationresources",
+	"isOwner": false
+}, {
+	"displayName": "Research",
+	"id": "research",
+	"isOwner": false
+}, {
+	"displayName": "User Interface Group",
+	"id": "userinterfacegroup",
+	"isOwner": false
+}]

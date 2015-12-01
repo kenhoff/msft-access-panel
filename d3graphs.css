@@ -1,0 +1,44 @@
+
+path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+rect:hover {  fill:#AC193D; }
+.axis {  font: 12px Helvetica, sans-serif; }
+.legend tr{    border-bottom:1px solid grey; }
+.legend tr:first-child{    border-top:1px solid grey; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {  display: none; }
+.legend{
+    /*margin-bottom:76px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    float: right;
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+  font: 16px Helvetica, sans-serif;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
+.histogram {
+  float: center; 
+}
+#table{
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#dashboard{
+  width: 500px;
+}

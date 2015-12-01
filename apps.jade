@@ -1,0 +1,39 @@
+extends layout.jade
+
+block title
+	title Apps - Contoso
+
+block scripts
+	script(src = "/loadApps.js")
+
+block content
+	link(href='/d3graphs.css', rel='stylesheet')
+	.col-md-8
+		#gridHeader.row 
+			h1 Applications
+			a(href = "#").icon: img(src = "/img/icons/add.svg")
+			a(href = "#").icon: img(src = "/img/icons/sort.svg")
+			a(href = "#").icon: img(src = "/img/icons/search.svg")
+		.row 
+			#grid
+	.col-md-4
+		.row(style = "height: 69px")
+		.row
+			.buttons
+				a.portal-button(href = "https://manage.windowsazure.com/" target = "_blank")
+					img(src = "/img/icons/azuremanagementportal.svg")
+					h3 Azure Management Portal
+				a.portal-button(href = "https://portal.azure.com" target = "_blank")
+					img(src = "/img/icons/azurepreviewportal.svg")
+					h3 Azure Preview Portal
+				a.portal-button(href = "/groups")
+					img(src = "/img/icons/apps-groups.svg")
+					.text
+						h3 Groups @Contoso
+						p (13 memberships, 2 owned)
+			
+		.row
+			#graphs
+
+	script(src = "http://d3js.org/d3.v3.min.js")
+	script(src = "/d3graphs.js")

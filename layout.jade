@@ -1,0 +1,86 @@
+html
+	head
+		script(src = "/sample-data/sign-ins.json")
+		script(src = "/sample-data/groups.json")
+		script(src = "/sample-data/applications.js")
+		script.
+			//- console.log("Sample data loaded: signIns, groups, applications")
+		link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
+		link(href='/navbar.css', rel='stylesheet')
+		script(src='https://code.jquery.com/jquery-2.1.4.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+		script(src='/navbar.js')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+		script(src = "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js")
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+		link(href='/main.css', rel='stylesheet')
+		block title
+		block scripts
+	body
+		.container
+			//- Jasmine - what I've done here is just converted the standard bootstrap navbar example to jade
+			.row
+				nav.navbar.navbar-default
+					.container-fluid
+						// Brand and toggle get grouped for better mobile display
+						.navbar-header
+							a.navbar-brand(href='#', id='brand')
+								img(alt='Brand', src='/img/brand.png')
+
+
+						// Collect the nav links, forms, and other content for toggling
+						//#bs-example-navbar-collapse-0.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li.dropdown
+								a(id='notifications')
+									span(class="glyphicon glyphicon-envelope", aria-hidden="true")
+							li.dropdown
+								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+									span(class="glyphicon glyphicon-question-sign", aria-hidden="true") 
+								ul.dropdown-menu
+									li
+										a(href='#') Help
+									li
+										a(href='#') Feedback
+							li.dropdown
+								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+									span(class="glyphicon glyphicon-user", aria-hidden="true") 
+									span  John Smith 
+								ul.dropdown-menu
+									li(role="presentation", class="dropdown-header")
+										span(class="glyphicon glyphicon-user", aria-hidden="true") 
+										span John Smith
+										p jsmith@contoso.com
+									li
+										a(href='#') Profile
+									li
+										a(href='#') Applications
+									li
+										a(href='#') Groups
+									li.divider(role='separator')
+									li
+										a(href='#') Sign out 
+				div(id='sidebar-wrapper', class='col-md-2 pull-right')
+					div(id='sidebar')
+						div(class='form-group')
+							h4 Notifications
+							a(href='#') Enable 
+							span Multi-factor Authorization to better protect your account
+							p  
+							span There have been two suspicious logins to your account.
+							a(href='#') Get info
+							hr 
+						div(id='approvals', class='form-group')
+							h4 Approvals
+							p Jillian has requested to join the Sales team
+							button(type='button', class="btn btn-default") Approve
+							button(type='button', class="btn btn-default") Deny
+							p
+							p Sam has requested to join the Marketing group
+							button(type='button', class="btn btn-default") Approve
+							button(type='button', class="btn btn-default") Deny
+
+			.row
+				block content
+				

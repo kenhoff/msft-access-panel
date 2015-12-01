@@ -1,0 +1,36 @@
+extends layout.jade
+
+block title
+	title #{name}
+
+
+
+block content
+	.col-md-4
+		#appsHeader.row
+			#groupDisplayName
+			
+		.row
+			h4 Group Information
+	
+	.col-md-8
+		.row(style = "height: 69px")
+		.row
+			h4 Group Members
+
+
+block scripts
+	script.
+		$(document).ready(function(){
+			console.log("test")
+			for (group of groups){
+				if (group.id == "#{name}"){
+					//console.log(group.displayName)
+					var newStr = "<h2>" + group.displayName + "</h2>";
+					//console.log(newStr);
+					console.log($("#groupDisplayName"));
+					$("#groupDisplayName").append(newStr);
+				}
+			}
+			console.log("done")
+		})
